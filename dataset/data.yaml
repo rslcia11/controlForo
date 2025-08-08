@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['monitor', 'laptop', 'pc']
+
+roboflow:
+  workspace: controlaforo
+  project: monitordetection-buevj-x3xtm
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/controlaforo/monitordetection-buevj-x3xtm/dataset/1

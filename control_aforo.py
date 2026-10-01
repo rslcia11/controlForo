@@ -153,7 +153,7 @@ def calculate_distance(box1, box2):
 def process_frame(frame, model, proximity_threshold=100, confidence_threshold=0.5):
     """Procesa un frame individual y devuelve las detecciones con análisis de ocupación"""
     if model is None:
-        return frame, 0, 0, 0, 0, 0
+        return frame, 0, 0, 0, 0, 0, 0
     
     # Realizamos la detección de objetos
     results = model(frame, stream=True, verbose=False)
@@ -551,7 +551,7 @@ with st.expander("🔧 Instalación y Requisitos"):
     
     **Ejecutar la aplicación:**
     ```bash
-    streamlit run aforo_app.py
+    streamlit run control_aforo.py
     ```
     
     **Configuración Recomendada:**
